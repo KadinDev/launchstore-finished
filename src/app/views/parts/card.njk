@@ -1,0 +1,22 @@
+
+{# macro é uma função no nunjucks, render é o nome dessa que dei.
+    render(title, classes) - estou mandando um titulo e as classes para estilizar
+#}
+
+{% macro render(title, classes) %}
+
+    <section class="card {{classes}}">
+
+        <div class="card-header">
+            <h3> {{title}} </h3>
+        </div>
+
+        {# esse caller é para os conteúdos serem trocardos de forma dinâmica, 
+        tudo que estiver dentro dessa div pode ser trocado pelo caller #}
+        <div class="card-content">
+            {{ caller() }}
+        </div>
+
+    </section>
+
+{% endmacro %}

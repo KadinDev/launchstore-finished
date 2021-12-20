@@ -1,0 +1,41 @@
+{% extends 'layout.njk' %}
+
+{% import "parts/card.njk" as cards %}
+
+
+{% block content %}
+    
+    {# tudo que estiver aqui dentro será colocado dentro do caller no card.njk #}
+    {# render( 'Meus Anúncios - é o título', 'users-ads container' - são as classes ) #}
+    
+    {% call cards.render('Meus Anúncios', 'users-ads container') %}
+
+        <div class="items">
+            {% for product in products %}
+                <div class="item">
+                    <div class="image"
+                        
+                    >
+                        <img src="{{product.img}}" alt="">
+                    </div>
+
+                    <div class="info">
+                        <div class="title"> {{product.name}} </div>
+                        <div class="price"> {{product.formattedPrice}} </div>
+                        <div class="published">Publicado em {{product.published.day}} às {{product.published.hour}} </div>
+                        
+                        <div class="actions">
+                            <a href="/products/{{product.id}}/edit">Editar</a>
+                            <a href="/products/{{product.id}}">Ver</a>
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+            {% endfor %}
+        </div>
+
+    {% endcall %}
+
+{% endblock content %}
