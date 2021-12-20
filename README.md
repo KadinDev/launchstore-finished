@@ -1,6 +1,6 @@
 ## Launchstore - E-commerce
 #### Sistema de E-commerce completo
-#### Home <br/>##### Tela home, pesquisar produto, filtrar produto, novo anúncio ... ![home](https://user-images.githubusercontent.com/65264902/146696024-16c44f32-f7ae-41e1-b4dd-86623d5462fb.jpg)
+#### Home <br/> ##### Tela home, pesquisar produto, filtrar produto, novo anúncio ... ![home](https://user-images.githubusercontent.com/65264902/146696024-16c44f32-f7ae-41e1-b4dd-86623d5462fb.jpg)
 #
 #### Home <br/> ##### se estiver logado tem a permissão de vender um produto, comprar um produto, area de meus pedidos, meus anúncios, minhas vendas, carrinho de compras, etc... aqui em baixo a tela de informação de um produto vendido, com as informações do comprador e vendedor![detalhesPedido](https://user-images.githubusercontent.com/65264902/146696100-e54c6af6-8b56-41b7-8791-d7bc5f0fcd67.jpg)
 #
